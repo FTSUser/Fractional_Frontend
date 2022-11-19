@@ -1,0 +1,51 @@
+@import '../../styles/mixins/global.scss';
+
+
+.quick-links {
+    h1 {
+        @include heading-2;
+        color: $black-3;
+        margin: 0;
+    }
+}
+.site-map-alignment {
+    padding: 160px 0 40px 0;
+    .Sitemap-title {
+        padding: 0px 0 30px 0;
+        h1 {
+            @include heading-2;
+            color: $black-3;
+            margin: 0;
+        }
+    }
+    .sitemaplist {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                @include text;
+                padding-bottom: 1rem;
+                color: $black-3;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                i {
+                    color: $red;
+                }
+              span {
+                  @include text;
+                  font-size: 16px;
+                  padding-left: 15px;
+                  color: $black-3;
+                  transition: .3s ease-in-out;
+                  &:hover {
+                      color: $red;
+                  }
+              }
+            }
+        }
+    }
+    .left-align-sitemap {
+        padding-left: 30px !important;
+    }
+}

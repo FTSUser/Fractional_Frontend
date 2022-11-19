@@ -1,0 +1,64 @@
+@import '../../styles/mixins/global.scss';
+
+.notification-section-alignment {
+    padding: 80px 0;
+
+    .notification-alignment {
+        margin: 0px 6%;
+        width: 960px;
+
+        .notification-heading {
+            font-family: "Gotham-Light_1";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #323232;
+            margin-bottom: 24px;
+        }
+
+        .notification-details-box-border {
+            background: #FFFFFF;
+            border: 1px solid #D0D0D0;
+
+            .notification-box-padding {
+                padding: 0 24px;
+
+                .notification-flex {
+                    display: flex;
+                    gap: 1rem;
+                    border-bottom: 0.5px solid #D0D0D0;
+                    padding: 22px 0;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    .notification-width {
+                        width: 847px;
+
+
+                        span {
+                            font-family: "Gotham-Light_1";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #777777;
+                            margin-bottom: 7px;
+                        }
+
+                        .hours-design {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #C4C4C4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

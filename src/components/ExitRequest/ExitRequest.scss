@@ -1,0 +1,200 @@
+@import '../../styles/mixins/global.scss';
+
+.exitRequest-section-alignment {
+    padding: 80px 0;
+
+    .exitRequest-alignment {
+     
+
+        .exitRequest-Heading {
+            h1 {
+                font-family: "Gotham-Light_1";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: #323232;
+                margin-bottom: 24px;
+            }
+        }
+
+        .exitRequest-Details-alignment {
+            .exitRequest-Details-box-border {
+                background: #FFFFFF;
+                border: 1px solid #D0D0D0;
+                padding: 15px 24px;
+
+                .exitRequest-Details-grid {
+                    display: grid;
+                    grid-template-columns: 172px auto;
+                    gap: 23px;
+                    margin-bottom: 31px;
+
+                    .exitRequest-reselling {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #777777;
+                        }
+                    }
+
+                    .exitRequest-reselling-Details {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 27px;
+                            text-align: justify;
+                            color: #323232;
+                        }
+
+                        p {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 27px;
+                            text-align: justify;
+                            color: #323232;
+                        }
+                    }
+                }
+
+                // .exitRequest-Details-flex {
+
+
+                .exitRequest-Selling-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 24px;
+
+                    .exitRequest-Selling-Heading {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #777777;
+                        }
+                    }
+
+                    .exitRequest-Selling-Value {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            text-align: right;
+                            color: #323232;
+                        }
+                    }
+
+
+                    .exitRequest-Date-Heading {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #777777;
+                        }
+                    }
+
+                    .exitRequest-Date-Value {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #323232;
+                        }
+                    }
+                }
+
+                .exitRequest-Satus-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    .exitRequest-Satus-Heading {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #777777;
+                        }
+                    }
+
+                    .exitRequest-Satus-button {
+                        button {
+                            background: #FFB800;
+                            border-radius: 4px;
+                            border: none;
+                            padding: 6px 16px;
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            cursor: pointer;
+                            font-size: 16px;
+                            line-height: 27px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .exitRequest-Remaining-flex {
+
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+
+                    .exitRequest-Remaining-Heading {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #777777;
+
+                        }
+                    }
+
+                    .exitRequest-Remaining-Download {
+                        .Details-flex-button {
+                            display: flex;
+                            gap: 0.5rem;
+                            cursor: pointer;
+
+                            img {
+                                width: 11px;
+                            }
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #E83B3B;
+                            }
+                        }
+                    }
+                }
+
+                // }
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+@import "../../styles/mixins/global.scss";
+@import "../../styles/mixins/breakpoint.scss";
+@import "../../styles/mixins/color.scss";
+@import "../../styles/mixins/typography.scss";
+.about-banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+}
+.about-page-alignment {
+  padding: 0px 0 0 0;
+  .about-banner {
+    background-image: url("../../Assets/Images/00.jpg");
+    height: 210px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @include breakpoint("max-sm") {
+      height: 40px
+    }
+    span {
+      @include text-small;
+      color: $black-4;
+      display: block;
+    }
+    h1 {
+      @include heading-1;
+      position: relative;
+      font-family: "Gotham-Light_1";
+      color: $white;
+      margin: 1rem 0 1.85rem 0;
+      text-align: center;
+      @include breakpoint("max-sm") {
+        @include heading-3;
+      }
+    }
+    p {
+      @include text;
+      color: $black-3;
+      margin: 0;
+      line-height: 28px;
+      max-width: 750px;
+    }
+  }
+}
+.about-grid-alignment .about-grid:last-child {
+  margin-bottom: 0;
+}
+.about-grid-alignment {
+  padding: 90px 0;
+  @include breakpoint("max-md") {
+    padding: 80px 0;
+  }
+  @include breakpoint("max-sm") {
+    padding: 60px 0;
+  }
+  @include breakpoint("max-md") {
+    .about-grid:nth-child(2n) {
+      .about-grid-items:nth-child(1) {
+        order: 2;
+      }
+      .about-grid-items:nth-child(2) {
+        order: 1;
+      }
+    }
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0 60px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    @include breakpoint("max-md") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 60px 0;
+    }
+    @include breakpoint("max-sm") {
+      margin-bottom: 40px;
+    }
+    @include breakpoint("max-md") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 20px 0;
+    }
+    .about-grid-items {
+      img {
+        width: 100%;
+      }
+      h2 {
+        @include heading-2;
+        color: $black-4;
+        font-family: "Gotham-Light_1";
+        margin: 0 0 1.85rem 0;
+        @include breakpoint("max-sm") {
+          @include heading-2;
+        }
+      }
+      p {
+        @include text-md;
+        color: $black-3;
+        line-height: 28px;
+        font-family: "Gotham-Light_1";
+      }
+    }
+  }
+}
+
+.people-behind-section {
+  padding-bottom: 120px;
+  @include breakpoint("max-sm") {
+    padding-bottom: 60px;
+  }
+  .title {
+    padding-bottom: 60px;
+    @include breakpoint("max-sm") {
+      padding-bottom: 0px;
+    }
+    h1 {
+      @include heading-2;
+      color: $black-4;
+      font-family: "Gotham-Light_1";
+      text-align: center;
+      margin: 0;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 0 50px;
+    @include breakpoint("max-md") {
+      grid-template-columns: repeat(2 , 1fr);
+    }
+    .grid-items {
+      .card-design {
+        width: 100%;
+        // height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: $black;
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+          @include breakpoint("max-sm") {
+            width: 100%;
+          }
+        }
+      }
+      p {
+        @include heading-4;
+        text-align: center;
+        color: $black-4;
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+}

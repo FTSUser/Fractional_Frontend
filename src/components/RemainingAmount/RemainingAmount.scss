@@ -1,0 +1,88 @@
+@import '../../styles/mixins/global.scss';
+
+
+.remainingAmount-section-alignment {
+    padding: 80px 0;
+
+    .remainingAmount-Received-alignment {
+
+        .remainingAmount-Received-Heading {
+            padding: 0 0 0 0;
+            h1 {
+                font-family: "Gotham-Light_1";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: #323232;
+                margin-bottom: 24px;
+            }
+        }
+
+        .remainingAmount-Received-Details-Alignment {
+            .remainingAmount-Received-Box-border {
+                border: 1px solid #D0D0D0;
+
+                .remainingAmount-Received-Details-box-design {
+                    &.white {
+                        background: #FFFFFF;
+                    }
+
+                    &.grey {
+                        background: rgba(208, 208, 208, 0.1);
+                    }
+
+                    .remainingAmount-Received-Display-flex {
+                        display: flex;
+                        justify-content: space-between;
+
+                        &.white-padding {
+                            padding: 19px 24px;
+                        }
+
+                        &.grey-padding {
+                            padding: 7px 24px;
+                            margin-bottom: 17px;
+                        }
+
+                        .remainingAmount-Received-Details-name {
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 27px;
+                                color: #777777;
+                            }
+                        }
+
+                        .remainingAmount-Received-Details-download-button {
+                            .Details-flex-button {
+                                display: flex;
+                                gap: 0.5rem;
+                                cursor: pointer;
+                                div {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                img {
+                                    width: 11px;
+                                }
+
+                                span {
+                                    font-family: 'Gotham-Light_1';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #E83B3B;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

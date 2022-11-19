@@ -1,0 +1,207 @@
+@import '../../styles/mixins/global.scss';
+
+.BookVisit-section-alignment {
+    padding: 70px;
+
+    .bookvisit-alignment {
+        // margin: 0px 6%;
+        // width: 990px;
+
+        .bookvisit-heading {
+            margin-bottom: 24px;
+            span {
+                font-family: 'Gotham-Light_1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: #323232;
+            }
+        }
+
+        .bookvisit-grid {
+            display: grid;
+            grid-template-columns: 1fr 505px;
+            gap: 24px;
+
+            .bookvisit-calendar {
+                background: #FFFFFF;
+                border: 1px solid #D0D0D0;
+                border-radius: 4px;
+                padding: 24px;
+                width: 100%;
+
+                .bookvisit-calendar-alignment {
+                    h2 {
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        display: block;
+                        padding: 0 0 28px 0;
+                        font-size: 18px;
+                        line-height: 27px;
+                        /* identical to box height */
+
+                        font-feature-settings: 'tnum' on, 'lnum' on;
+
+                        color: #323232;
+                    }
+                }
+
+                .bookvisit-button-alignment {
+                    margin-top: 50px;
+                    text-align: end;
+
+                    button {
+                        width: 137px;
+                        height: 40px;
+                        background: #E83B3B;
+                        border-radius: 4px;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        cursor: pointer;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                        border: none;
+
+                    }
+                }
+            }
+
+            .bookvisit-upcoming {
+                .days-left-box {
+                    height: 134px;
+                    background: rgba(232, 59, 59, 0.08);
+                    border: 1px solid #E83B3B;
+                    border-radius: 4px;
+                    text-align: center;
+                    padding-top: 22px;
+
+                    span {
+                        &.redtext {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 60px;
+                            line-height: 90px;
+                            text-align: center;
+                            color: #E83B3B;
+                            padding-right: 4px;
+                        }
+
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 39px;
+                        color: #323232;
+                    }
+                    .until-date{
+                        font-family: 'Gotham-Light_1';
+                        font-weight: 600;
+                        line-height: 27px;
+                        margin-top: -5px;
+                    }
+                }
+
+                .bookvisit-upcoming-heading {
+                    margin-top: 41px;
+                    margin-bottom: 8px;
+
+                    span {
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 23px;
+                        line-height: 33px;
+                        color: #323232;
+                    }
+                }
+
+                .bookvisit-upcoming-details {
+                    width: 100%;
+                    height: 134px;
+                    background: #FFFFFF;
+                    border: 1px solid #D0D0D0;
+                    border-radius: 4px;
+                    padding: 8px;
+                    margin-bottom: 24px;
+
+                    .bookvisit-upcoming-details-grid {
+                        display: grid;
+                        grid-template-columns: 341px 141px;
+
+                        .bookvisit-upcoming-details-alignment {
+                            padding: 10px;
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #323232;
+                            }
+
+                            p {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #777777;
+                                margin: 0;
+                            }
+                            .booking-calcel-btn{
+                                margin-top: 10px;
+                                button {
+                                    width: 137px;
+                                    height: 40px;
+                                    background: #E83B3B;
+                                    border-radius: 4px;
+                                    font-family: 'Gotham-Light_1';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    cursor: pointer;
+                                    line-height: 27px;
+                                    color: #FFFFFF;
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        .bookvisit-days-left-box {
+                            background: rgba(232, 59, 59, 0.1);
+                            border-radius: 4px;
+                            width: 141px;
+                            height: 118px;
+                            padding: 26px 21px;
+                            text-align: center;
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 26px;
+                                text-align: center;
+                                color: #E83B3B;
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rdrCalendarWrapper ,
+.rdrMonth
+{
+    width: 100% !important;
+}

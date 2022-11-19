@@ -1,0 +1,182 @@
+@import '../../../styles/mixins/typography.scss';
+@import '../../../styles/mixins/breakpoint.scss';
+@import '../../../styles/mixins/color.scss';
+@import '../../../styles/mixins/global.scss';
+
+.footer-child {
+    background-color: $black;
+    padding: 40px 0;
+    @include breakpoint("max-sm") {
+        padding: 20px 0 ;
+    }
+    .footer-child-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint("max-sm") {
+            display: block;
+        }
+        p {
+            @include text;
+            color: $white;
+            margin: 0;
+            @include breakpoint("max-sm") {
+                margin: 0 0 20px 0;
+                @include text-sm;
+            }
+        }
+        i {
+            color: $white;
+            font-size: 22px;
+            cursor: pointer;
+            padding-right: 30px;
+        }
+    }
+}
+
+footer {
+    padding: 60px 0 40px 0;
+    background-color: #cacaca;
+    .footer-main-grid {
+        display: grid;
+        grid-template-columns: 450px minmax(0 , 1fr);
+        gap: 0 40px;
+        @include breakpoint("max-md") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 60px 0;
+        }
+        @include breakpoint("max-sm") {
+            gap: 40px 0;
+        }
+        .footer-main-grid-items {
+            .footer-grid {
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                gap: 0 40px;
+                @include breakpoint("max-md") {
+                    grid-template-columns: repeat(2 , 1fr);
+                    gap: 40px 0;
+                }
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 20px 0;
+                }
+                .footer-grid-items {
+                    h2 {
+                        @include heading-3;
+                        color: $red;
+                        margin: 0 0 1.85rem 0;
+                        font-family: "Gotham-Light_1";
+                    }
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        li , a{
+                            padding-bottom: 10px;
+                            @include text;
+                            font-family: "Gotham-Light_1";
+                            color: $black-4;
+                            cursor: pointer;
+                            @include breakpoint("max-sm") {
+                                @include text-sm;
+                            }
+                        }
+                    }
+                    span {
+                        @include text;
+                        color: $black-4;
+                        font-family: "Gotham-Light_1";
+                        font-weight: 400;
+                        display: block;
+                        padding-bottom: 10px;
+                        @include breakpoint("max-sm") {
+                            @include text-sm;
+                        }
+                    }
+                    p {
+                        @include text;
+                        cursor: pointer;
+                        color: $black-4;
+                        font-family: "Gotham-Light_1";
+                        margin: 0 0 10px 0;
+                        @include breakpoint("max-sm") {
+                            @include text-sm;
+                        }
+                    }
+                }
+
+            }
+            .footer-logo {
+                img {
+                    width: 260px;
+                }
+                h1 {
+                    @include heading-3;
+                    color: $black-4;
+                    margin: 0 0 1.85rem 0;
+                    cursor: pointer;
+                }
+                p {
+                    @include text;
+                    padding-right: 4rem;
+                    color: $black-4;
+                    font-family: "Gotham-Light_1";
+                    display: -webkit-box;
+                    margin-bottom: 0px;
+                    // -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 6;
+                    overflow: hidden;
+                     &.removePText {
+                        -webkit-line-clamp: inherit;
+                     }
+                }
+                a {
+                    color: $red;
+                    @include text;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.footer-text-grid {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 0 1rem;
+    .footer-text-grid-items {
+
+    }
+}
+
+.social-icon-alignment {
+    display: flex;
+    align-items: center;
+    img {
+        width: 40px;
+        margin-right: 20px;
+    }
+    img:last-child {
+        margin-right: 0px;
+    }
+}
+.bg-footer{
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+    
+}
+.footer-icon{
+    // padding: 20px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+
+}

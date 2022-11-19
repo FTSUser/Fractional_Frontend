@@ -1,0 +1,133 @@
+@import '../../../styles/mixins/color.scss';
+@import '../../../styles/mixins/breakpoint.scss';
+@import '../../../styles/mixins/global.scss';
+@import '../../../styles/mixins/typography.scss';
+
+.how-it-works-section-alignment {
+    padding: 60px 0 120px 0;
+    @include breakpoint("max-md") {
+        padding: 80px 0;
+    }
+    @include breakpoint("max-sm") {
+        padding: 60px 0;
+    }
+    background-color: #cacaca;
+    .page-title {
+        padding-bottom: 60px;
+        @include breakpoint("max-sm") {
+            padding-bottom: 40px;
+        }
+        h1 {
+            margin: 0;
+            @include heading-1;
+            text-align: center;
+            color: $black;
+            font-family: "Gotham-Light_1";
+            text-transform: uppercase;
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 0 80px;
+        &-boxtwo{
+            grid-template-columns: repeat(2 , 1fr);
+        }
+        
+        &-boxOne{
+            grid-template-columns: repeat(1 , 1fr);
+        }
+        @include breakpoint("max-md") {
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 20px;
+        }
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 20px;
+        }
+        .grid-items {
+            cursor: pointer;
+            position: relative;
+            background-color: $white;
+            padding: 25px;
+            transition: .3s ease-in-out;
+            h1 {
+                @include heading-3;
+                color: $black-4;
+                text-align: center;
+                font-family: "Gotham-Light_1";
+                font-weight: bold;
+                @include breakpoint("max-sm") {
+                    @include heading-4;
+                    font-size: 22px;
+                }
+            }
+            p {
+                @include text-md;
+                color: $black-3;
+                font-family: "Gotham-Light_1";
+                text-align: center;
+                @include breakpoint("max-sm") {
+                    @include text-sm;
+                }
+            }
+            .icon-design-home {
+                display: flex;
+                justify-content: center;
+                .hero-section-icon {
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid $black-4;
+                    background-color: $white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include breakpoint("max-sm") {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    img {
+                        width: 60px;
+                        @include breakpoint("max-sm") {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                transform: translate(0 , -4px);
+            }
+            .work-details {
+                padding: 1rem 0 0 0;
+                h2 {
+                    @include text-md;
+                    font-weight: 600;
+                    margin: 0 0 10px 0;
+                    color: $black-4;
+                }
+                p {
+                    @include text;
+                    color: $gray-3;
+                    margin: 0;
+                }
+            }
+            .work-image {
+                img {
+                    width: 100%;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+.right-side-icon-center-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -65px;
+    @include breakpoint("max-md") {
+        display: none;
+    }
+}

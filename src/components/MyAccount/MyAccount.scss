@@ -1,0 +1,448 @@
+@import '../../styles/mixins/global.scss';
+
+.myAccount-section-alignment {
+    padding: 80px 0;
+
+    .myAccount-alignment {
+        // margin: 0px 6%;
+        // width: 960px;
+
+        .myAccount-header-text-design {
+            font-family: 'Gotham-Light_1';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #323232;
+            margin-bottom: 24px;
+        }
+
+        .myAccount-details-box-border {
+            background: #FFFFFF;
+            border: 1px solid #D0D0D0;
+            border-radius: 4px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 400px 1fr;
+            margin-bottom: 20px;
+
+            .myAccount-details-relative {
+                position: relative;
+                cursor: pointer;
+                img{
+                    width: 400px;
+                    height: 257px;
+                    left: 240px;
+                    top: 210px;
+                    max-width: 104%;
+                }
+                .myAccount-number-details-position {
+                    position: absolute;
+                    top: 8%;
+                    transform: translateY(-50%);
+                    // left: 22%;
+                    padding: 12px 12px;
+                    cursor: pointer;
+
+                    .new-counter-design-alignment {
+                        background: #484848;
+                        mix-blend-mode: multiply;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        border-radius: 50%;
+                        color: #FFFFFF;
+                        width: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 24px;
+
+                    }
+                }
+
+                .MyAccount-Arrow-Deisgn {
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+
+
+
+            .MyAccount-Details-padding {
+                padding: 20px 20px 20px 0;
+
+                .myAccount-Details-Location-alignment {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .myAccount-Details-Location-flex {
+                        display: flex;
+                        gap: 5px;
+
+                        .myAccount-Details-Location-Name {
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19px;
+                                color: #323232;
+                            }
+                        }
+
+                    }
+
+                    .MyAccount-Details-Date-Display {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #777777;
+                        }
+                    }
+                }
+
+                .myAccount-Details-Address {
+                    margin-top: 18px;
+
+                    span {
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #323232;
+
+                    }
+                }
+
+                .myAccount-Interest-Received {
+                    span {
+                        cursor: pointer;
+                        background: #008726;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 9px;
+
+                    }
+                }
+                .myAccount-Exit-Request-Received {
+                    span {
+                        cursor: pointer;
+                        background: #0483CA;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 9px;
+
+                    }
+                }
+
+                .myAccount-Remaining-amount-Received {
+                    span {
+                        cursor: pointer;
+                        background: #F4B000;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 8px;
+                    }
+                }
+
+                .myAccount-Exit-Approved {
+                    span {
+                        cursor: pointer;
+                        background: #F47500;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 8px;
+                    }
+                }
+                .myAccount-Resold {
+                    span {
+                        cursor: pointer;
+                        background: #008080;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 8px;
+                    }
+                }
+
+                .myAccount-Refund-Processed {
+                    span {
+                        cursor: pointer;
+                        background: #F47500;
+                        border-radius: 2px;
+                        border: none;
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        padding: 2px 8px;
+                    }
+                }
+
+                .myAccount-Details-button-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 150px ;
+
+                    .myAccount-Details-flex-alignment {
+                        display: flex;
+                        margin-top: 12px;
+
+                        .myAccount-Details-3Beds {
+                            padding-right: 20px;
+                            border-right: 1px solid #D0D0D0;
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #323232;
+                            }
+                        }
+
+                        .myAccount-Details-Baths {
+                            padding: 0 20px;
+                            border-right: 1px solid #D0D0D0;
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #323232;
+                            }
+                        }
+
+                        .myAccount-Details-Size {
+                            padding-left: 20px;
+
+                            span {
+                                font-family: 'Gotham-Light_1';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #323232;
+                            }
+                        }
+
+                    }
+
+
+                    .myAccount-Details-Assets-flex-alignment {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 19px;
+
+                        .myAccount-Details-Assets-Value {
+                            // width: 100px;
+                            // height: 50px;
+                            background: rgba(232, 59, 59, 0.1);
+                            border-radius: 4px;
+
+                            .myAccount-Details-Assets-Padding {
+                                padding: 5px 8px;
+
+                                h5 {
+                                    @include text-sm;
+                                    font-weight: 600;
+                                    color: #E83B3B;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    text-align: center;
+                                    margin: 0 0 4px 0;
+
+                                    @include breakpoint("max-md") {
+                                        text-align: left;
+                                    }
+                                }
+
+                                span {
+                                    text-align: center;
+                                    display: block;
+                                    @include text-sm;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 14px;
+
+                                    color: #6C6C6C;
+
+                                    @include breakpoint("max-md") {
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .myAccount-remaining-BookVisit {
+                        button {
+                            border: 0.5px solid #E83B3B;
+                            border-radius: 5px;
+                            background: #FFFFFF;
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            cursor: pointer;
+                            line-height: 17px;
+                            text-align: center;
+                            color: #E83B3B;
+                            padding: 5px;
+                            width: 146px;
+                            margin-bottom: 6px;
+                        }
+                    }
+
+                    .myAccount-Details-SellNow {
+                        button {
+                            background: #E83B3B;
+                            border-radius: 5px;
+                            border: none;
+                            background: #E83B3B;
+                            border-radius: 5px;
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            width: 148px;
+                            padding: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.property-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    font-family: 'Gotham-Light_1';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgb(130, 21, 21);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }

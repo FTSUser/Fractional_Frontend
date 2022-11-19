@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p:last-child {
+    margin-top: 0;
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+
+}
+
+tbody {
+    background: #fff;
+    padding: 20px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.blank-box-span {
+    width: "20%";
+    padding: "8px";
+    float: "right"
+}
+
+.thanks-message {
+    font-size: "14px";
+    line-height: "20px";
+    color: "#010101";
+    font-weight: 500,
+
+}
+
+.main-invoice-alignment{
+    border-collapse: "collapse";
+    width: "715px";
+    margin: "20px 0";
+}
+
+
+.description-details {
+    padding: "20px 0 10px 0";
+    border-bottom: "10px solid #e83b3b";
+
+    p {
+        font-size: "14px";
+        line-height: "20px";
+        color: "#010101";
+        font-weight: 500;
+        margin: "0 0 10px 0",
+    }
+}

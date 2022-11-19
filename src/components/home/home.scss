@@ -1,0 +1,189 @@
+@import '../../styles/mixins/typography.scss';
+@import '../../styles/mixins/breakpoint.scss';
+@import '../../styles/mixins/global.scss';
+@import '../../styles/mixins/color.scss';
+
+.hero-banner {
+    background-image: url("../../Assets/Images/new-hero.png");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    border-bottom: 10px solid $red;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 68px);
+    margin-top: 60px;
+    .hero-text-style {
+        position: relative;
+        button {
+            @include medium-button;
+            min-width: 180px;
+            height: 50px;
+            cursor: pointer;
+            background-color: $black;
+        }
+        h1 {
+            @include heading-large;
+            color: $white;
+            letter-spacing: -.01em;
+            line-height: 57px;
+            font-size: 48px;
+        }
+        p {
+            @include text;
+            color: $white;
+            margin: 0 0 1.85rem 0;
+            font-weight: 500;
+        }
+    }
+}
+
+.hero-banner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.subscribe-banner-blur {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+    .subscribe-modal {
+        width: 750px;
+        background-color: $white;
+        animation-name: leaves;
+        animation-duration: .2s;
+        animation-timing-function: linear;
+        border-radius: 4px;
+        padding: 40px 40px 70px 0;
+        .modal-close-icon {
+            display: flex;
+            justify-content: flex-end;
+            svg {
+                cursor: pointer;
+                stroke: $gray-3;
+            }
+        }
+        .modal-body {
+            padding: 0 4rem;
+            h1 {
+                @include heading-2;
+                text-align: center;
+                color: $black-4;
+            }
+            p {
+                @include text;
+                margin: 0 0 40px 0;
+                line-height: 28px;
+                text-align: center;
+                color: $black-3;
+            }
+            .button-center-align  {
+                margin: 40px 0 0 0;
+                button {
+                    @include medium-button;
+                    width: 100%;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+}
+
+.button-center-align-home {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999999999;
+    height: 100vh;
+    align-items: end;
+    margin-bottom: 7rem;
+    button {
+        @include medium-button;
+        min-width: 210px;
+        background-color: #e83b3bad;
+        letter-spacing: 1px;
+        border: 1px solid $white;
+        font-family: "Gotham-Light_1";
+        height: 50px;
+    }
+}
+
+@keyframes leaves {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+              // transition: .3s ease-in-out;
+    }
+    20% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+              // transition: .5s ease-in-out;
+    }
+    50% {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+              // transition: .8s ease-in-out;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transition: .3s ease-in-out;
+              transform: scale(1);
+              // transition: .5s ease-in-out;
+    }
+  }
+
+
+  .awssld__content {
+      background-color: transparent !important;
+  }
+  .image-slide-align{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+  }
+
+  .image-blur {
+      position: absolute;
+      top: 0;
+      background-color: rgba(0,0,0,.5);
+      left: 0;
+      z-index: 9999999999999999999999999;
+      width: 100%;
+  }
+
+  .awssld__controls__arrow-left:after, .awssld__controls__arrow-right:after {
+      background-color: $red !important;
+  }
+
+  .awssld__controls__arrow-left:before{
+      background-color: $red !important;
+      
+  }
+
+  .awssld__controls__arrow-right:before {
+      background-color: $red !important;
+  }

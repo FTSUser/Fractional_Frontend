@@ -1,0 +1,150 @@
+@import '../../styles/mixins/global.scss';
+
+.sellnow-section-alignment {
+    padding: 70px;
+
+    .sellnow-alignment {
+        // margin: 0px 6%;
+        // width: 990px;
+
+        .sellnow-heading-alignment {
+    margin-bottom: 24px;
+
+            span {
+                font-family: "Gotham-Light_1";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #323232;
+            }
+        }
+
+        .sellnow-price-alignment {
+            margin-top: 24px;
+
+            .price-label {
+                label {
+                    font-family: 'Gotham-Light_1';
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #777777;
+                    margin: 0;
+                }
+            }
+
+            .sellnow-price-input-alignmnet {
+                display: flex;
+
+                .small-input-alignment {
+                    input {
+                        width: 51px;
+                        height: 51px;
+                        background: #FFFFFF;
+                        border: 1px solid #C4C4C4;
+                        border-radius: 4px 0px 0px 4px;
+                        border-right: none;
+                        &:focus {
+                            outline: none;
+                        }
+                        &::placeholder {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 27px;
+                            color: #C4C4C4;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .price-input-alignment {
+                    input {
+                        width: 203px;
+                        height: 51px;
+                        background: #FFFFFF;
+                        border: 1px solid #C4C4C4;
+                        border-radius: 0 4px 4px 0;
+                        padding-left: 15px;
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #C4C4C4;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+        .sellnow-reason-alignment {
+            .label-alignment {
+                margin-top: 24px;
+
+                label {
+                    font-family: 'Gotham-Light_1';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin: 0;
+                    color: #777777;
+                }
+            }
+
+            .sellnow-reason-details-alignment {
+                textarea {
+                    width: 100%;
+                    background: #FFFFFF;
+                    border: 1px solid #C4C4C4;
+                    border-radius: 4px;
+                    padding: 15px;
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        font-family: 'Gotham-Light_1';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #C4C4C4;
+                    }
+                }
+            }
+        }
+
+        .sellnow-button-alignment {
+            margin-top: 50px;
+            text-align: end;
+
+            button {
+                width: 137px;
+                height: 40px;
+                background: #E83B3B;
+                border-radius: 4px;
+                font-family: 'Gotham-Light_1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                cursor: pointer;
+                color: #FFFFFF;
+                border: none;
+
+            }
+        }
+    }
+}

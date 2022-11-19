@@ -1,0 +1,295 @@
+@import '../../../styles/mixins/color.scss';
+@import '../../../styles/mixins/breakpoint.scss';
+@import '../../../styles/mixins/global.scss';
+@import '../../../styles/mixins/typography.scss';
+
+
+.available-properties-section-alignment {
+    padding: 120px 0;
+
+    @include breakpoint("max-md") {
+        padding: 80px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        padding: 60px 0;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 40px;
+        justify-content: space-between;
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .card-grid-items {
+            border: 1px solid $light-gray-border;
+            background-color: #ebebeb;
+            cursor: pointer;
+            position: relative;
+            height: 500px;
+            max-height: 500px;
+
+            @include breakpoint("max-sm") {
+                height: 530px;
+                max-height: 530px;
+            } 
+
+            .button-Alignment {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+
+                .button-style {
+                    margin: 1rem 0 0 0;
+
+
+                    @include breakpoint("max-sm") {
+                        margin: 0;
+                    }
+
+                    button {
+                        @include medium-button;
+                        width: 100%;
+                        background-color: $red;
+                        font-size: 18px;
+                        height: 50px;
+                        border-radius: 0px;
+
+                        @include breakpoint("max-sm") {
+                            @include text;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            .card-details {
+                padding: 1.25rem;
+
+                .department-alignment {
+                    padding-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    .col-direction {
+                        padding-right: 40px;
+                    }
+
+                    div {
+                        .icon-text-alignment {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        p {
+                            @include text-bold;
+                            font-weight: 500;
+                            margin: 0 0 8px 0;
+                            color: $black-4;
+                        }
+
+                        span {
+                            display: block;
+                            @include text-sm;
+                            font-weight: 500;
+                            color: $gray-3;
+                            padding-left: 8px;
+                        }
+                    }
+                }
+
+                .child-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0 0;
+                    justify-content: space-between;
+
+                    @include breakpoint("max-md") {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 20px;
+                    }
+
+                    .child-grid-items:last-child {
+                        border: none;
+                    }
+
+                    .child-grid-items {
+                        border-right: 1px solid $light-gray-border;
+
+                        h5 {
+                            @include text-sm;
+                            font-weight: 600;
+                            color: $black-3;
+                            text-align: center;
+                            margin: 0 0 0px 0;
+
+                            @include breakpoint("max-md") {
+                                text-align: left;
+                            }
+                        }
+
+                        span {
+                            text-align: center;
+                            display: block;
+                            @include text-sm;
+                            color: $gray-3;
+                            font-size: 10px;
+
+                            @include breakpoint("max-md") {
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                }
+
+                h2 {
+                    @include heading-3;
+                    margin: 1rem 0 0rem 0;
+                    color: $black-4;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    height: 60px;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+
+
+                    @include breakpoint("max-sm") {
+                        @include text-md;
+                        margin: 1rem 0;
+                    }
+                }
+
+                .location-text-alignment {
+                    display: flex;
+                    align-items: center;
+
+                    @include breakpoint("max-sm") {
+                        padding-left: 0px;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            color: $red;
+                            font-size: 18px;
+                        }
+
+                        span {
+                            display: block;
+                            padding-left: 1rem;
+                            @include text-bold;
+                            color: $gray-3;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+            }
+
+            .card-images {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+
+                    @include breakpoint("max-sm") {
+                        height: 215px;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-title-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 60px;
+
+        @include breakpoint("max-sm") {
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            @include heading-1;
+            color: $red;
+            margin: 0;
+            font-family: "Gotham-Light_1";
+        }
+
+        span {
+            display: block;
+            @include text-bold;
+            font-family: "Gotham-Light_1";
+            color: $gray-3;
+        }
+    }
+}
+
+
+
+
+
+.cus-slider-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+
+    .slider-button-alignment {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        p {
+            background-color: red;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+    .available-properties-section-alignment .card-grid .card-grid-items .card-details h2 {
+        margin: 5px 0 1rem 0 !important;
+        font-size: 20px !important;
+    }
+
+    .available-properties-section-alignment {
+        padding: 60px 0 120px 0;
+    }
+
+    .available-properties-section-alignment .card-grid .card-grid-items .card-details h2 {
+        font-family: "Gotham-Light_1";
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 1rem 0 1.85rem 0;
+        color: #050505;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        height: auto;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .available-properties-section-alignment .card-grid .card-grid-items .card-details {
+        padding: 1.25rem 1.25rem 0 1.25rem !important;
+    }
+}

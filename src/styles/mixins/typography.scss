@@ -1,0 +1,149 @@
+@use '../mixins/breakpoint.scss';
+@use '../mixins/font.scss';
+
+@mixin heading-large {
+  font-family: "Gotham-Light_1";
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+}
+
+@mixin heading-1 {
+  font-family: "Gotham-Light_1";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 3rem;
+  letter-spacing: -0.01em;
+
+  @include breakpoint("max-md") {
+    @include heading-2();
+  }
+
+  @include breakpoint("max-sm") {
+    @include heading-3();
+  }
+
+}
+
+@mixin heading-2 {
+  font-family: "Gotham-Light_1";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+@mixin heading-3 {
+  font-family: "Gotham-Light_1";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin heading-4 {
+  font-family: "Gotham-Light_1";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin heading-5 {
+  font-family: "Gotham-Light_1";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin heading-5-bold {
+  font-family: "Gotham-Light_1";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin heading-6 {
+  font-family: "Gotham-Light_1";
+  font-size: 0.675rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin heading-7 {
+  font-family: "Gotham-Light_1";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.03rem;
+}
+
+@mixin text-md {
+  font-family: "Gotham-Light_1";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+@mixin text {
+  font-family: "Gotham-Light_1";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-bold {
+  font-family: "Gotham-Light_1";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-sm {
+  font-family: "Gotham-Light_1";
+  font-size: 0.775rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-sm-bold {
+  font-family: "Gotham-Light_1";
+  font-size: 0.775rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+
+@mixin text-small {
+  font-family: "Gotham-Light_1";
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+@mixin text-span {
+  font-family: 'Gotham-Light_1' !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+@mixin text-16 {
+  font-family: 'Gotham-Light_1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}

@@ -1,0 +1,155 @@
+@import '../../styles/mixins/global.scss';
+@import '../../styles/mixins/breakpoint.scss';
+@import '../../styles/mixins/color.scss';
+@import '../../styles/mixins/typography.scss';
+
+.contact-banner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.contact-section-alignment {
+    padding: 0 0 0 0;
+    .contact-banner {
+        background-image: url("../../Assets/Images/faq.jpg");
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        // background-color: $background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 60px 0;
+        span {
+            @include text-small;
+            color: $black-3;
+            display: block;
+        }
+        .child-text-center-align-contact {
+            display: flex;
+            justify-content: center;
+
+        }
+        h1 {
+            @include heading-1;
+            color: $white;
+            text-align: center;
+            margin: 10px 0 1.25rem 0;
+            position: relative;
+            font-family: "Gotham-Light_1";
+        }
+        p {
+            max-width: 500px;
+            @include text-md;
+            position: relative;
+            text-align: center;
+            font-family: "Gotham-Light_1";
+            margin: 0;
+            color: $white;
+        }
+    }
+}
+
+
+.tell-us-section-alignment {
+    padding: 80px 0;
+    @include breakpoint("max-sm") {
+        padding: 60px 0;
+    }
+    .details-submit-button {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            @include medium-button;
+            height: 50px;
+            min-width: 150px;
+        }
+    }
+    .contact-page-align {
+        padding: 0 10rem;
+        @include breakpoint("max-md") {
+            padding: 0 4rem;
+        }
+        @include breakpoint("max-sm") {
+            padding: 0 0;
+        }
+    }
+    h2 {
+        margin: 0 0 60px 0;
+        @include heading-2;
+        font-family: "Gotham-Light_1";
+        color: $red;
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 0 20px;
+        margin: 0 0 20px;
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 20px;
+        }
+    }
+    .contact-form-bottom-align {
+        margin: 0 0 20px 0;
+    }
+}
+
+
+.our-office-location {
+    padding: 0 0 60px 0;
+    .office-title {
+        padding: 0 0 60px 0;
+        h1 {
+            @include heading-2;
+            color: $black-4;
+            text-align: center;
+            font-family: "Gotham-Light_1";
+            margin: 0;
+        }
+        p {
+            text-align: center;
+            @include text-md;
+            font-family: "Gotham-Light_1";
+            text-align: center;
+            color: $black-3;
+        }
+    }
+    .office-grid {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: 0 50px;
+        .office-grid-items {
+            p {
+                @include text-md;
+                cursor: pointer;
+                color: $black-4;
+                font-weight: 500;
+                text-align: center;
+                margin: 1.25rem 0 0 0;
+                font-family: "Gotham-Light_1";
+            }
+            .card-design {
+                width: 100%;
+                height: 190px;
+                background-color: $background;
+            }
+        }
+    }
+}
+.about-grid-alignment{
+    .about-grid-items {
+        p{
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}

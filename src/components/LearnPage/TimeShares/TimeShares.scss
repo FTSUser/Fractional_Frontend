@@ -1,0 +1,89 @@
+@import '../../../styles/mixins/color.scss';
+@import '../../../styles/mixins/breakpoint.scss';
+@import '../../../styles/mixins/global.scss';
+@import '../../../styles/mixins/typography.scss';
+
+.table-body-border {
+    border: 1px solid $light-gray-border;
+   
+}
+.time-shares-section-alginment {
+    padding: 40px 0;
+    @include breakpoint("max-md") {
+        padding: 80px 0;
+    }
+    .time-grid {
+        display: grid;
+        grid-template-columns: 1fr 550px;
+        gap: 0 60px;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint("max-md") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 60px 0;
+        }
+        .time-grid-items {
+            h1 {
+                @include heading-2;
+                font-weight: 500;
+                color: $black-4;
+                margin: 0 0 1.25rem 0;
+                font-family: "Gotham-Light_1";
+            }
+            p {
+                @include text-md;
+                color: $black-3;
+                margin: 0;
+                font-family: "Gotham-Light_1";
+            }
+            .table-body {
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                gap: 0 10px;
+                height: 50px;
+                border-bottom: 1px solid $light-gray-border;
+                justify-content: space-between;
+                .table-body-items:nth-child(1) {
+                    padding-left: 1rem;
+                }
+                .table-body-items:nth-child(3) {
+                    padding-left: 1rem;
+                }
+                .table-body-items {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        @include text-sm;
+                        color: $black-3;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .table-header-grid {
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                height: 50px;
+                justify-content: space-between;
+                .table-header-grid-items:nth-child(1) {
+                    background-color: $red;
+                }
+                .table-header-grid-items:nth-child(2) {
+                    background-color: $red;
+                }
+                .table-header-grid-items:nth-child(3) {
+                    background-color: #b52b2b;
+                    padding-left: 1rem;
+                }
+                .table-header-grid-items {
+                    background-color: $black;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        @include text;
+                    }
+                }
+            }
+        }
+    }
+}

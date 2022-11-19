@@ -1,0 +1,39 @@
+@import '../../styles/mixins/breakpoint.scss';
+@import '../../styles/mixins/color.scss';
+@import '../../styles/mixins/global.scss';
+@import '../../styles/mixins/typography.scss';
+
+.disclaimer-section-alignment {
+    padding: 70px 0 120px 0;
+    @include breakpoint("max-sm") {
+        padding: 120px 0 60px 0;
+    }
+    .page-title {
+        padding-bottom: 60px;
+        @include breakpoint("max-sm") {
+            padding-bottom: 40px;
+        }
+        h1 {
+            @include heading-1;
+            font-weight: 600;
+            text-align: center;
+            color: $black-4;
+            margin: 0;
+        }
+    }
+    .child-text-style {
+        padding: 0 150px;
+        @include breakpoint("max-md") {
+            padding: 0 80px;
+        }
+        @include breakpoint("max-sm") {
+            padding: 0;
+        }
+        p {
+            @include text;
+            color: $gray-3;
+            text-align: left;
+            line-height: 28px;
+        }
+    }
+}

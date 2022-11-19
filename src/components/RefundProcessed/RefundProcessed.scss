@@ -1,0 +1,58 @@
+@import '../../styles/mixins/global.scss';
+
+.refundProcessed-section-alignment {
+    padding: 80px 0;
+
+    .refundProcessed-alignment {
+
+        .refundProcessed-Heading {
+            padding: 0 0 0 0;
+            h1 {
+                font-family: "Gotham-Light_1";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: #323232;
+                margin-bottom: 24px;
+            }
+        }
+
+        .refundProcessed-Details-alignment {
+            .refundProcessed-Details-box-border {
+                background: #FFFFFF;
+                border: 1px solid #D0D0D0;
+
+                .refundProcessed-Display-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 24px;
+
+                    .refundProcessed-Details-Id {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 27px;
+                            color: #777777;
+                        }
+                    }
+
+                    .refundProcessed-refund-number {
+                        span {
+                            font-family: 'Gotham-Light_1';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                            text-align: right;
+                            color: #323232;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
